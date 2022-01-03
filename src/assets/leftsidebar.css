@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text: #182746;
+    --button: #f07613; 
+  }
+   .leftsidebar::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+   .leftsidebar::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+   .leftsidebar::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  p,
+  a{
+      color: var(--text);
+  }
+  .leftsidebar{
+      height: 100vh;
+      overflow-y:scroll;
+  }
+.header{
+    padding: 30px 0px;
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.header_inner .headings h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.header_inner .headings p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+}
+.buttons h5{
+    font-size: 15px !important;
+}
+.buttons .btn_help{
+    max-width: 100px !important;
+    height: 40px;
+    font-size: 14px;
+    margin-left:10px;
+    background-color: rgb(223, 223, 223);
+    color: var(--text);
+}
+.buttons .btn_help:focus{
+    outline: none;
+    box-shadow: none;
+}
+.buttons .btn_help .help_icon{
+    font-size: 10px !important;
+}
+.buttons h5{
+    font-size: 15px;
+}
+.buttons h5 span{
+    font-size: 12px;
+}
+#btn_active{
+    background-color: var(--button);
+    width: 100px !important;
+    height: 40px;
+    color: var(--text);
+    border-radius: 20px;
+    font-size: 13px;
+    color: white;
+}
+#btn_active:focus{
+    outline: none;
+    box-shadow: none;
+}
+#btn_1{
+    width: 100px !important;
+    height: 40px;
+    color: var(--text);
+    border-radius: 20px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    margin-left:10px;
+    background-color: rgb(223, 223, 223);
+}
+#btn_1:focus{
+    outline: none;
+    box-shadow: none;
+}
+#btn_1:hover{
+    background-color: var(--button);
+    color: white;
+}
+.menu{
+    padding: 30px 0px;
+}
+.menu_items{
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.menu_items:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #e2e8f0;
+}
+.menu_items h3{
+    font-size: 20px;
+    color: var(--text);
+}
+.menu_items span{
+    color: lightgray;
+}
+.menu_img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+.menu_img{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_img span{
+    margin-top: 70px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: var(--button);
+}
+.promo h6{
+    font-size: 10px;
+}
+.promo button{
+    font-size: 13px;
+}
+.promo .promo_buttons{
+    color: var(--text);
+    background-color: rgb(223, 223, 223);
+    width: 100%;
+    height: 50px;
+}
+.promo .promo_buttons:focus{
+    outline: none;
+    box-shadow: none;
+}
+.promo .promo_buttons:hover{
+    border: 2px solid #fecaca;
+    background-color: transparent !important;
+}
+/* .promo{
+    display: flex;
+    justify-content: flex-end;
+} */
+ /* .promo_buttons{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: flex-end;
+} */
+.promo_buttons h6{
+    font-size: 12px;
+}
+.promo_buttons button{
+    width: 150px !important;
+    height: 50px;
+    color: var(--text);
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: rgb(223, 223, 223);
+    transition: 0.5s;
+}
+.promo_buttons button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.promo_buttons button:hover{
+    background-color: transparent;
+    border: 1px solid #fee2e2;
+    box-shadow: 0px 0px 10px #e2e8f0;
+}
+@media only screen and (max-width: 870px) {
+    .menu_img img{
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 100px;
+    }
+}
+@media only screen and (max-width: 918px) {
+    #btn_active{
+        font-size: 10px;
+        width: 80px;
+    }
+    #btn_1{
+        font-size: 10px;
+        width: 80px;
+    }
+}
+@media only screen and (max-width:768px){
+    .promo .promo_buttons{
+        font-size: 10px;
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width:495px){
+    .buttons h5{
+        display: none;
+    }
+    .headings h1{
+        font-size: 17px !important;
+    }
+    .buttons .btn_help{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  p,
+  a{
+      color: var(--text);
+  }
+    .rightsidebar .order_fetch::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+     .rightsidebar .order_fetch::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+     .rightsidebar .order_fetch::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+  .rightsidebar{
+      position: fixed;
+      height: 100vh;
+      margin-right: 30px;
+  }
+  .rightsidebar .order_fetch{
+      overflow-y: auto;
+  }
+.current_orders{
+    padding: 30px 0px;
+}
+.current_orders h3{
+    font-size: 20px !important;
+    font-weight: bold;
+}
+/* .current_fetch{
+    display: flex;
+    flex-direction: column;
+} */
+.clear{
+    width: 100px !important;
+    height: 40px;
+    color: var(--text);
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: rgb(223, 223, 223);
+}
+.clear:focus{
+    outline: none;
+    box-shadow: none;
+}
+.setting{
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+}
+.setting:focus{
+    outline: none;
+    box-shadow: none;
+}
+.title_img{
+    display: flex;
+}
+.title_img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.add_subtract{
+    display: flex;
+}
+.add_subtract .add{
+    color: var(--text);
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: rgb(223, 223, 223);
+}
+.add_subtract .add:focus{
+    outline: none;
+    box-shadow: none;
+}
+.add_subtract .remove{
+    color: var(--text);
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: rgb(223, 223, 223);
+}
+.add_subtract .remove:focus{
+    outline: none;
+    box-shadow: none;
+}
+.add_subtract .amount{
+    font-size: 17px !important;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+.delete{
+    color: var(--text);
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: rgb(223, 223, 223);
+}
+.delete:focus{
+    outline: none;
+    box-shadow: none;
+}
+.title_img h3{
+    font-size: 13px;
+}
+.total_price{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+.discount{
+    display: flex;
+    justify-content: space-between;
+}
+.sale{
+    display: flex;
+    justify-content: space-between;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.credit{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.available_credit h6{
+    font-size: 15px;
+    color: var(--text);
+}
+.available_credit h5{
+    color: var(--button);
+    font-weight: bold;
+}
+.available_credit span{
+    font-size: 13px;
+    color: gray;
+}
+.cancel_button .cancel{
+    width: 120px !important;
+    height: 40px;
+    color: var(--text);
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: rgb(223, 223, 223);
+    margin-top: 20px;
+}
+.cancel_button .cancel:focus{
+    outline: none;
+    box-shadow: none;
+}
+.cashless_button .cashless{
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--button);
+    color: white;
+    margin-bottom: 20px;
+}
+.cashless_button .cashless:focus{
+    outline: none;
+    box-shadow: none;
+}
+.due_balance{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 918px) {
+    .rightsidebar{
+       position: relative;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rightsidebar{  
+        margin-right: 0px !important;
+    }
+}
